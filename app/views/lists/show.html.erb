@@ -1,1 +1,8 @@
 <h1><%= @list.name %></h1>
+
+<h2>here are all the movies available on the platform</h2>
+<% @movies.each do |movie| %>
+<p><%= movie.title %></p>
+<% end %>
+
+
