@@ -1,10 +1,11 @@
 <h1>New Bookmark</h1>
 
 <h1>Create a New List</h1>
-<%= form_with model: @list do |form| %>
+<%= simple_form_for @list do |form| %>
   <div>
     <%= form.label :name %>
     <%= form.text_field :name %>
+    <%= form.input :photo, as: :file %>
   </div>
 
   <div>

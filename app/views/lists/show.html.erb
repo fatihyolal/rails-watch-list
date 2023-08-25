@@ -1,8 +1,7 @@
 <h1><%= @list.name %></h1>
+<%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
 
 <h2>here are all the movies available on the platform</h2>
-<% @movies.each do |movie| %>
-<p><%= movie.title %></p>
+<% @list.bookmarks.each do |bookmark| %>
+  <p><%= bookmark.movie.title %></p>
 <% end %>
-
-
