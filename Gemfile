@@ -50,6 +50,7 @@ gem "font-awesome-sass", "~> 6.1"
 gem "simple_form"
 
 gem "dotenv-rails"
+gem "cloudinary"
 
 # Use Sass to process CSS
 gem "sassc-rails"
